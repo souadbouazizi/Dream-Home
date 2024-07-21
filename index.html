@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  </head>
+  <body>
+    <div class="justify-content-center">
+      <!------------nav-bar------------->
+      <div class="container sticky-top mt-5 w-100">
+        <div
+          class="navbar bg-info text-white navbar-expand-lg justify-content-center rounded p-3"
+        >
+          <a href="./index.html" class="navbar-brand text-white">
+            <h1 style="font-size: 1.5rem">Dream Home</h1></a
+          >
+          <buttom
+            class="navbar-toggler"
+            type="buttom"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </buttom>
+          <div  class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown"> <a href="./index.html" class="nav-link active text-white">Home</a></li>
+              <!------->
+              <li class="nav-item dropdown active">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle text-white"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  onclick="window.location.href='./properties.html'"
+                >
+                  Properties
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="./properties.html" class="dropdown-item">Buy property</a></li>
+                  <li class="dropdown dropend">
+                    <a
+                      href="#"
+                      class="dropdown-item dropdown-toggle"
+                      role="button"
+                      data-bs-auto-close="outside"
+                      data-bs-toggle="dropdown"
+                    >
+                      Sell Property
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a href="#" class="dropdown-item">property A</a></li>
+                      <li><a href="#" class="dropdown-item">property B</a></li>
+                      <li><a href="#" class="dropdown-item">property C</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Other Property</a></li>
+                </ul>
+              </li>
+              <!------->
+              <li class="nav-item">
+                <a href="./Services.html" class="nav-link text-white">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="./About.html" class="nav-link text-white">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="./Contact.html" class="nav-link text-white">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!------------End navbar----------------->
+      <!---------------slide carousel----------------->
+
+      <div id="slides-with-indicators"
+        class="carousel  carousel-dark carousel-fade justify-content-center"
+        data-bs-ride="carousel"
+        data-bs-theme="dark"
+      >
+        <div class="carousel-indicators justify-content-start">
+          <button
+            class="active bg-info"
+            type="button"
+            data-bs-target="#slides-with-indicators"
+            data-bs-slide-to="0"
+            style="width: 60px; height: 12px; border-radius: 4rem"
+          ></button>
+          <button
+            class="bg-info"
+            type="button"
+            data-bs-target="#slides-with-indicators"
+            data-bs-slide-to="1"
+            style="width: 60px; height: 12px; border-radius: 4rem"
+          ></button>
+          <button
+            class="bg-info"
+            type="button"
+            data-bs-target="#slides-with-indicators"
+            data-bs-slide-to="2"
+            style="width: 60px; height: 12px; border-radius: 4rem"
+          ></button>
+        </div>
+        <div class="carousel-inner justify-content-center">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./images/carousel.jpg" alt="" />
+            <div
+              class="carousel-caption d-none d-md-block justify-content-center"
+            >
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <h5 class="Title-caption fw-bold fs-3">
+                    Find your dream home in record time
+                  </h5>
+                  <form
+                    class="d-md-flex d-block justify-content-center align-tems-center"
+                    role="search"
+                  >
+                    <input
+                      class="form-control rounded-pill me-3 border-0 py-3"
+                      type="search"
+                      placeholder="Search for more than 10.000 Products"
+                      aria-label="Search"
+                      aria-placeholder="Search for more than 10.000 Products"
+                      placeholder="Search for more than 10.000 Products"
+                    />
+                    <button
+                      class="btn btn-info text-white rounded-pill btn-sm py-1 px-5"
+                      type="submit"
+                    >
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./images/carousel2.jpg" alt="" />
+            <div
+              class="carousel-caption d-none d-md-block justify-content-center"
+            >
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <h5 class="Title-caption fw-bold fs-3">
+                    Find your dream home in record time
+                  </h5>
+                  <form
+                    class="d-md-flex d-block justify-content-center align-tems-center"
+                    role="search"
+                  >
+                    <input
+                      class="form-control rounded-pill me-3 border-0 py-3"
+                      type="search"
+                      placeholder="Search for more than 10.000 Products"
+                      aria-label="Search"
+                      aria-placeholder="Search for more than 10.000 Products"
+                      placeholder="Search for more than 10.000 Products"
+                    />
+                    <button
+                      class="btn btn-info text-white rounded-pill btn-sm py-1 px-5"
+                      type="submit"
+                    >
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./images/carousel.jpg" alt="" />
+            <div
+              class="carousel-caption d-none d-md-block justify-content-center"
+            >
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <h5 class="Title-caption fw-bold fs-3">
+                    Find your dream home in record time
+                  </h5>
+                  <form
+                    class="d-md-flex d-block justify-content-center align-tems-center"
+                    role="search"
+                  >
+                    <input
+                      class="form-control rounded-pill me-3 border-0 py-3"
+                      type="search"
+                      placeholder="Search for more than 10.000 Products"
+                      aria-label="Search"
+                      aria-placeholder="Search for more than 10.000 Products"
+                      placeholder="Search for more than 10.000 Products"
+                    />
+                    <button
+                      class="btn btn-info text-white rounded-pill btn-sm py-1 px-5"
+                      type="submit"
+                    >
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slides-with-indicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slides-with-indicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--------end carousel------------->
+    <!---------------section Popular Properties-------------->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h3 class="title-popular">Popular Properties</h3>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="./properties.html" class="btn btn-info text-white rounded-pill py-2" type="buttom"
+            >View all properties</a
+          >
+        </div>
+        <div
+          id="slides-with-indicators1"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators" style="bottom: -65px">
+            <button
+              class="active"
+              type="button"
+              data-bs-target="#slides-with-indicators1"
+              data-bs-slide-to="0"
+              style="
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #ccc;
+              "
+            ></button>
+            <button
+              class=""
+              type="button"
+              data-bs-target="#slides-with-indicators1"
+              data-bs-slide-to="1"
+              style="
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #ccc;
+              "
+            ></button>
+            <button
+              class=""
+              type="button"
+              data-bs-target="#slides-with-indicators1"
+              data-bs-slide-to="2"
+              style="
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #ccc;
+              "
+            ></button>
+          </div>
+          <div class="carousel-inner1 mt-5">
+            <div class="carousel-item active">
+              <div
+                class="card-wrapper d-md-flex d-block justify-content-around"
+              >
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image2.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image3.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper d-md-flex d-block justify-content-around"
+              >
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image4.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image5.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image6.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper container-sm d-md-flex d-block justify-content-around"
+              >
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image7.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image8.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/image9.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5
+                      class="card-title text-secondary fw-bold fs-3 d-table border-bottom border-4 border-secondary"
+                    >
+                      $1,291,000
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-secondary fw-light d-block mt-3"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="fw-bold fs-4 mt-3 d-block text-colod-dark"
+                        >Lorem ipsum dolor
+                      </span>
+                      <span
+                        class="d-inline-flex fw-light text-secondary align-tems-center mt-3"
+                      >
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                          />
+                        </svg>
+                        2 bed
+                        <svg
+                          width="16px"
+                          height="16px"
+                          class="me-2 ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            fill="#9c9c9c"
+                            d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"
+                          />
+                        </svg>
+                        2 baths
+                      </span>
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-info text-white rounded-pill px-2 py-1 mt-2"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slides-with-indicators1"
+            data-bs-slide="prev"
+            style="
+              top: auto;
+              bottom: -40px;
+              background: black !important;
+              border-radius: 8rem;
+              width: 100px;
+              height: 40px;
+            "
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slides-with-indicators1"
+            data-bs-slide="next"
+            style="
+              top: auto;
+              bottom: -40px;
+              background: black !important;
+              border-radius: 8rem;
+              width: 100px;
+              height: 40px;
+            "
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!---------------End section Popular Properties-------------->
+    <!------Section features-1------>
+    <section class="features mt-5 bg-light py-5">
+      <div class="container mt-5">
+        <div class="row justify-content-center g-3">
+          <div class="col-md-3">
+            <div class="text-center bg-white m-3 px-3 py-4">
+              <div class="icon text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-buildings mb-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"
+                  />
+                  <path
+                    d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"
+                  />
+                </svg>
+              </div>
+              <h3 class="title-features fs-5 mt-2 fw-normal">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-features text-black-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                fugiat eligendi velit quis reprehenderit. Quae?
+              </p>
+              <a
+                href="#"
+                class="btn-feature border-bottom border-4 text-decoration-none text-secondary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center bg-white m-3 px-3 py-4">
+              <div class="icon text-center bg-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-hospital mb-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1zM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25z"
+                  />
+                  <path
+                    d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1zm2 14h2v-3H7zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1zm0-14H6v1h4zm2 7v7h3V8zm-8 7V8H1v7z"
+                  />
+                </svg>
+              </div>
+              <h3 class="title-features fs-5 mt-2 fw-normal">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-features text-black-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                fugiat eligendi velit quis reprehenderit. Quae?
+              </p>
+              <a
+                href="#"
+                class="btn-feature border-bottom border-4 text-decoration-none text-secondary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center bg-white m-3 px-3 py-4">
+              <div class="icon text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-building mb-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                  />
+                  <path
+                    d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
+                  />
+                </svg>
+              </div>
+              <h3 class="title-features fs-5 mt-2 fw-normal">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-features text-black-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                fugiat eligendi velit quis reprehenderit. Quae?
+              </p>
+              <a
+                href="#"
+                class="btn-feature border-bottom border-4 text-decoration-none text-secondary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center bg-white m-3 px-3 py-4">
+              <div class="icon text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-door-open mb-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"
+                  />
+                  <path
+                    d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"
+                  />
+                </svg>
+              </div>
+              <h3 class="title-features fs-5 mt-2 fw-normal">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-features text-black-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                fugiat eligendi velit quis reprehenderit. Quae?
+              </p>
+              <a
+                href="#"
+                class="btn-feature border-bottom border-4 text-decoration-none text-secondary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----End sectionfeatures-1---->
+
+    <!-------------Section Customer Says--------------->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h3 class="title-popular">Customer Says</h3>
+        </div>
+        <div class="col-md-6"></div>
+        <div
+          id="slides-with-indicators2"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators" style="bottom: -65px">
+            <button
+              class="active"
+              type="button"
+              data-bs-target="#slides-with-indicators2"
+              data-bs-slide-to="0"
+              style="
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #ccc;
+              "
+            ></button>
+            <button
+              class=""
+              type="button"
+              data-bs-target="#slides-with-indicators2"
+              data-bs-slide-to="1"
+              style="
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #ccc;
+              "
+            ></button>
+          </div>
+          <div class="carousel-inner1 mt-5">
+            <div class="carousel-item active">
+              <div
+                class="card-wrapper d-md-flex d-block justify-content-around"
+              >
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/cos1.jpg"
+                    class="card-img-top photo-coustomer"
+                    alt="..."
+                    style="width: 80px; height: 80px; border-radius: 50%"
+                  />
+                  <div class="card-body">
+                    <span class="d-flex mb-2 text-warning"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                        </svg>
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                    </span>
+                    <h5 class="card-title mb-3">Lorem, ipsum.</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium, beatae?
+                    </p>
+                    <p class="fw-light text-secondary-50 mb-3 small">
+                      Post Manager
+                    </p>
+                    <a href="#" class="btn btn-info text-white rounded-pill px-3 py-1"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/cos2.jpg"
+                    class="card-img-top photo-coustomer"
+                    alt="..."
+                    style="width: 80px; height: 80px; border-radius: 50%"
+                  />
+                  <div class="card-body">
+                    <span class="d-flex mb-2 text-warning"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                    </span>
+                    <h5 class="card-title mb-3">Lorem, ipsum.</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium, beatae?
+                    </p>
+                    <p class="fw-light text-secondary-50 mb-3 small">
+                      Post Manager
+                    </p>
+                    <a href="#" class="btn btn-info text-white rounded-pill px-3 py-1"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/cos3.jpg"
+                    class="card-img-top photo-coustomer"
+                    alt="..."
+                    style="width: 80px; height: 80px; border-radius: 50%"
+                  />
+                  <div class="card-body">
+                    <span class="d-flex mb-2 text-warning"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                    </span>
+                    <h5 class="card-title mb-3">Lorem, ipsum.</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium, beatae?
+                    </p>
+                    <p class="fw-light text-secondary-50 mb-3 small">
+                      Post Manager
+                    </p>
+                    <a href="#" class="btn btn-info text-white rounded-pill px-3 py-1"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper container-sm d-md-flex d-block justify-content-around"
+              >
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/cos4.jpg"
+                    class="card-img-top photo-coustomer"
+                    alt="..."
+                    style="width: 80px; height: 80px; border-radius: 50%"
+                  />
+                  <div class="card-body">
+                    <span class="d-flex mb-2 text-warning"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                    </span>
+                    <h5 class="card-title mb-3">Lorem, ipsum.</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium, beatae?
+                    </p>
+                    <p class="fw-light text-secondary-50 mb-3 small">
+                      Post Manager
+                    </p>
+                    <a href="#" class="btn btn-info text-white rounded-pill px-3 py-1"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/cos5.jpg"
+                    class="card-img-top photo-coustomer"
+                    alt="..."
+                    style="width: 80px; height: 80px; border-radius: 50%"
+                  />
+                  <div class="card-body">
+                    <span class="d-flex mb-2 text-warning"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                    </span>
+                    <h5 class="card-title mb-3">Lorem, ipsum.</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium, beatae?
+                    </p>
+                    <p class="fw-light text-secondary-50 mb-3 small">
+                      Post Manager
+                    </p>
+                    <a href="#" class="btn btn-info text-white rounded-pill px-3 py-1"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-md-block m-3 border-0">
+                  <img
+                    src="./images/cos6.jpg"
+                    class="card-img-top photo-coustomer"
+                    alt="..."
+                    style="width: 80px; height: 80px; border-radius: 50%"
+                  />
+                  <div class="card-body">
+                    <span class="d-flex mb-2 text-warning"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg></span>
+                    <h5 class="card-title mb-3">Lorem, ipsum.</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium, beatae?
+                    </p>
+                    <p class="fw-light text-secondary-50 mb-3 small">
+                      Post Manager
+                    </p>
+                    <a href="#" class="btn btn-info text-white rounded-pill px-3 py-1"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slides-with-indicators2"
+            data-bs-slide="prev"
+            style="
+              bottom: auto;
+              background: #000;
+              width: 80px;
+              border-radius: 8rem;
+              height: 40px;
+              left: auto;
+              right: 100px;
+            "
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slides-with-indicators2"
+            data-bs-slide="next"
+            style="
+              bottom: auto;
+              background: #000;
+              width: 80px;
+              border-radius: 8rem;
+              height: 40px;
+            "
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!------------End Section Customer Says---------------->
+
+    <!----------section perfect------------>
+
+    <section class="perfect justify-content-center bg-light py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <h3 class="title-perfect">
+              Let's find home that's perfect for you
+            </h3>
+            <p class="text-perfect">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+              quas deleniti repudiandae iste neque quaerat. Vel quaerat dolore
+              iste officiis?
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="d-grid align-items-center">
+              <div class="item-grid d-flex align-items-center">
+                <div
+                  class="icon bg-secondary me-3"
+                  style="
+                    width: 80px;
+                    height: 60px;
+                    border-radius: 100%;
+                    text-align: center;
+                    padding-top: 20px;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-house-door-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="title-grid">lorem3</h4>
+                  <p class="text-grid">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima, facere. Provident hic dignissimos rerum dicta.
+                  </p>
+                </div>
+              </div>
+              <div class="item-grid d-flex align-items-center">
+                <div
+                  class="icon bg-secondary me-3"
+                  style="
+                    width: 80px;
+                    height: 60px;
+                    border-radius: 100%;
+                    text-align: center;
+                    padding-top: 20px;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-person-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="title-grid">lorem3</h4>
+                  <p class="text-grid">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima, facere. Provident hic dignissimos rerum dicta.
+                  </p>
+                </div>
+              </div>
+              <div class="item-grid d-flex align-items-center">
+                <div
+                class="icon bg-secondary me-3"
+                style="
+                  width: 80px;
+                  height: 60px;
+                  border-radius: 100%;
+                  text-align: center;
+                  padding-top: 20px;
+                "
+              >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-fan"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10 3c0 1.313-.304 2.508-.8 3.4a2 2 0 0 0-1.484-.38c-.28-.982-.91-2.04-1.838-2.969a8 8 0 0 0-.491-.454A6 6 0 0 1 8 2c.691 0 1.355.117 1.973.332Q10 2.661 10 3m0 5q0 .11-.012.217c1.018-.019 2.2-.353 3.331-1.006a8 8 0 0 0 .57-.361 6 6 0 0 0-2.53-3.823 9 9 0 0 1-.145.64c-.34 1.269-.944 2.346-1.656 3.079.277.343.442.78.442 1.254m-.137.728a2 2 0 0 1-1.07 1.109c.525.87 1.405 1.725 2.535 2.377q.3.174.605.317a6 6 0 0 0 2.053-4.111q-.311.11-.641.199c-1.264.339-2.493.356-3.482.11ZM8 10c-.45 0-.866-.149-1.2-.4-.494.89-.796 2.082-.796 3.391q0 .346.027.678A6 6 0 0 0 8 14c.94 0 1.83-.216 2.623-.602a8 8 0 0 1-.497-.458c-.925-.926-1.555-1.981-1.836-2.96Q8.149 10 8 10M6 8q0-.12.014-.239c-1.02.017-2.205.351-3.34 1.007a8 8 0 0 0-.568.359 6 6 0 0 0 2.525 3.839 8 8 0 0 1 .148-.653c.34-1.267.94-2.342 1.65-3.075A2 2 0 0 1 6 8m-3.347-.632c1.267-.34 2.498-.355 3.488-.107.196-.494.583-.89 1.07-1.1-.524-.874-1.406-1.733-2.541-2.388a8 8 0 0 0-.594-.312 6 6 0 0 0-2.06 4.106q.309-.11.637-.199M8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                    />
+                    <path
+                      d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="title-grid">lorem3</h4>
+                  <p class="text-grid">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima, facere. Provident hic dignissimos rerum dicta.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./images/image16.jpg"
+              alt="perfect services"
+              class="photo-perfect w-100"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-between mt-3 text-center">
+          <div class="col-md-3">
+            <div>
+              <h3 class="fw-bold fs-2 num">3.218</h3>
+              <p class="text-secondary fw-light fs-4">Of Buy Properties</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <h3 class="fw-bold fs-2 num">1.218</h3>
+              <p class="text-secondary fw-light fs-4">Of Sell Properties</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <h3 class="fw-bold fs-2 num">3.008</h3>
+              <p class="text-secondary fw-light fs-4">Of All Properties</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <h3 class="fw-bold fs-2 num">2.200</h3>
+              <p class="text-secondary fw-light fs-4">Of Agents</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------End section perfect-------->
+    <!------------section state agents-------------->
+    <section class="state-agent justify-content-center mt-5 py-5 text-center">
+      <div class="container">
+        <h3 class="title-state-agent fs-3 fw-bold mb-5">
+          Be a part of our growing real state agents
+        </h3>
+        <a href="#" class="btn btn-info text-white rounded-pill py-3 px-5"
+          >Apply for Real Estate agent</a>
+       
+      </div>
+    </section>
+    <div class="bg-light mt-5 mb-5 py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-6 mb-5">
+            <h3 class="title-our-agent fs-2 fw-bold ">Our Agents</h3>
+          </div>
+          </div>
+          <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card d-md-block m-3 border-0 text-center bg-transparent">
+              <img
+                src="./images/team1.jpg"
+                class="card-img-top photo-team"
+                alt="..."
+                style="width: 80px; height: 80px; border-radius: 50%; margin:0 auto;"
+              />
+              <div class="card-body bg-white py-5 px-2" style="margin-top: -2rem;">
+                <h5 class="card-title mb-3">Team Name</h5>
+                <p class="fw-light text-secondary-50 mb-3 small">
+                  Team Manager
+                </p>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima consequuntur est ullam et veniam quam at deserunt error harum odit.
+                </p>
+                
+               <span class="d-inline-flex socal-link gap-2">
+
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg></a>
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></a>
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg></a>
+                <a href="#" class="social-link-team">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+                </a>
+               </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card d-md-block m-3 border-0 text-center bg-transparent">
+              <img
+                src="./images/team2.jpg"
+                class="card-img-top photo-team"
+                alt="..."
+                style="width: 80px; height: 80px; border-radius: 50%; margin:0 auto;"
+              />
+              <div class="card-body bg-white py-5 px-2" style="margin-top: -2rem;">
+                <h5 class="card-title mb-3">Team Name</h5>
+                <p class="fw-light text-secondary-50 mb-3 small">
+                  Team Manager
+                </p>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima consequuntur est ullam et veniam quam at deserunt error harum odit.
+                </p>
+                
+               <span class="d-inline-flex socal-link gap-2">
+
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg></a>
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></a>
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg></a>
+                <a href="#" class="social-link-team">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+                </a>
+               </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card d-md-block m-3 border-0 text-center bg-transparent">
+              <img
+                src="./images/team3.jpg"
+                class="card-img-top photo-team"
+                alt="..."
+                style="width: 80px; height: 80px; border-radius: 50%; margin:0 auto;"
+              />
+              <div class="card-body bg-white py-5 px-2" style="margin-top: -2rem;">
+                <h5 class="card-title mb-3">Team Name</h5>
+                <p class="fw-light text-secondary-50 mb-3 small">
+                  Team Manager
+                </p>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima consequuntur est ullam et veniam quam at deserunt error harum odit.
+                </p>
+                
+               <span class="d-inline-flex socal-link gap-2">
+
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg></a>
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></a>
+                <a href="#" class="social-link-team"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg></a>
+                <a href="#" class="social-link-team">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+                </a>
+               </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------End section state agents-------------->
+
+<!----------start footer-------------->
+
+<footer class="footer py-5 bg-info">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-4">
+        <h3 class="title-footer mb-3 fs-6 fw-bold text-light">Contact us</h3>
+        <span class="adress d-block text-light">liberty street Tunis 1000</span>
+        <span class="phone d-block"><a class="text-light" href="tel://0021671444222">0021671444222</a></span>
+        <span class="mobile d-block"><a class="text-light" href="tel://0021698444222">0021698444222</a></span>
+        <span class="email d-block"><a class="text-light" href="mailto:info@DreamHome.com">info@DreamHome.com</a></span>
+      </div>
+      <div class="col-md-4">
+        <h3 class="title-footer mb-3 fs-6 fw-bold text-light">Sources</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-group list-unstyled">
+              <li><a class="text-light" href="#">Link-footer</a></li>
+              <li><a class="text-light" href="#">Link-footer</a></li>
+              <li><a class="text-light" href="#">Link-footer</a></li>
+              <li><a class="text-light" href="#">Link-footer</a></li>
+              <li><a class="text-light" href="#">Link-footer</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group list-unstyled">
+              <li><a class="text-light" href="#">Link-footer</a></li>
+              <li><a class="text-light" href="#">Link-footer</a></li>
+              <li><a class="text-light" href="#">Link-footer</a></li>
+              <li><a class="text-light" href="#">Link-footer</a></li>
+              <li><a class="text-light" href="#">Link-footer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3 class="title-footer mb-3 fs-6 fw-bold text-light">Links</h3>
+        <ul class="list-group list-unstyled">
+              <li><a class="text-light" href="#">item-link</a></li>
+              <li><a class="text-light" href="#">item-link</a></li>
+              <li><a class="text-light" href="#">item-link</a></li>
+          </ul>
+          <span class="d-inline-flex mt-5 gap-3">
+            <a href="#" class="social-footer"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a>
+            <a href="#" class="social-footer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+              </svg>
+            </a>
+            <a href="#" class="social-footer">
+              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0dcaf0" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+            </a>
+            <a href="#" class="social-footer">
+              <svg width="20" height="20"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0dcaf0" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+            </a>
+            <a href="#" class="social-footer" >
+              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0dcaf0" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg>
+            </a>
+            <a href="#" class="social-footer" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z"/>
+              </svg>
+            </a>
+          </span>
+
+      </div>
+    </div>
+    <div class="row justify-content-center text-center mt-5">
+      <div class="col-md-4">
+        <span class="d-block text-white">Copyright © 2024  AlaaEldinAlhallak</span>
+        <span class="d-block text-white">realized by Souad Bouazizi</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--------------end-footer---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+
+
+
+    <script>
+      $(document).ready(function () {
+        $(".num").counterUp({
+          time: 1500,
+        });
+      });
+    </script>
+  </body>
+</html>
